@@ -1,0 +1,6 @@
+const fs = require('fs')
+const json = JSON.parse(fs.readFileSync('./config.json', 'utf8'))
+process.stdout.write(json.name + '\n' + json.bio + '\n' + 'Born: ' + json.born + '\n' + 'Died: ' + json.died )
+//process.stdout.write(json.bio)
+//process.stdout.write('Born: ' + json.born)
+//process.stdout.write('Died: ' + json.died)
